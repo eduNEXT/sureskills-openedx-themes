@@ -1,0 +1,59 @@
+ 
+ 
+  /***** Navigation bar ******/
+
+ 
+ .logo a {
+ 	transition: all 0.1s linear 0s;
+
+ 	&:hover {
+ 		transform: scale3d(1.03,1.03,1.03);
+ 	}
+
+ 	img{
+ 		max-height: 60px;
+ 	}
+ 	
+ }
+
+ .header-global .nav-courseware li .btn.btn-login {
+ 	background: ButtonFace;
+ 	color: #333;
+
+ 	&:hover {
+ 		background: ButtonFace;
+ 		color: #333;
+ 	}
+
+ }
+
+ /***** Footer *****/
+ .window-wrap .wrapper-footer {
+ 	background: #415a6c;
+
+	 	#footer-openedx {
+	 		.nav-colophon{
+	 		display: none;
+	 		}
+
+	 	.footer-about-openedx a span {
+	 		color: #b4d333;
+	 		margin: 10px;
+	 		}
+
+	 	.copyright{
+	 		color: #666666;
+	 	}
+
+	 	.nav-legal li a{
+	 		color: #4d6475;
+
+	 		&:hover{
+	 			color: #00b4e4;
+	 		}
+	 	}
+ 	}
+
+
+ }
+

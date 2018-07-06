@@ -30,7 +30,7 @@
           </nav>
 
           ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-          <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+          <p class="copyright">© 1993-2018 SureSkills Limited</p>
 
           <nav class="navbar legal-nav navbar-toggleable-sm navbar-light" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
@@ -104,15 +104,13 @@
         </div>
 
         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
-        <p class="copyright">${footer['copyright']} ${u" | {icp}".format(icp=getattr(settings,'ICP_LICENSE')) if getattr(settings,'ICP_LICENSE',False) else ""}</p>
+        <p class="copyright">© 1993-2018 SureSkills Limite</p>
 
         <nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
-            % for item_num, link in enumerate(footer['legal_links'], start=1):
-              <li class="nav-legal-0${item_num}">
-                <a href="${link['url']}">${link['title']}</a>
+              <li class="nav-legal-01">
+                <a href="https://www.sureskills.com/Home/About-Us/Privacy">Privacy Policy</a>
               </li>
-            % endfor
           </ul>
         </nav>
       </div>
@@ -124,11 +122,17 @@
       % if not hide_openedx_link:
       <div class="footer-about-openedx">
         <section class="social-feed">
-        <a href="${twitter_org_link}" target="_blank">
+        <a href="https://www.linkedin.com/company/sureskills/" target="_blank">
+          <span class="icon fa fa-linkedin" aria-hidden="true"></span>
+        </a>
+        <a href="https://twitter.com/sureskills" target="_blank">
           <span class="icon fa fa-twitter" aria-hidden="true"></span>
         </a>
-        <a href="${facebook_org_link}" target="_blank">
+        <a href="https://www.facebook.com/SureSkills/" target="_blank">
           <span class="icon fa fa-facebook" aria-hidden="true"></span>
+        </a>
+        <a href="https://www.youtube.com/user/SureSkills/" target="_blank">
+          <span class="icon fa fa-youtube" aria-hidden="true"></span>
         </a>
       </section>
       </div>
