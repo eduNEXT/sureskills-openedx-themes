@@ -1,4 +1,4 @@
-  
+
   /***** Navigation bar ******/
  
  .logo a {
@@ -24,6 +24,15 @@
  		color: #333;
  	}
 
+ }
+
+ .window-wrap .header-global{
+ 	border-bottom: 1px solid #b4d333;
+ }
+
+ /**** Banner ****/
+ .window-wrap .home header{
+ 	background: #00abeb;
  }
 
  /***** Footer *****/
@@ -56,6 +65,11 @@
 
  }
 
+ /**** Login ***/
+ .window-wrap .login-register-content{
+ 	height: 715px;
+ }
+
 
  /**** Course content ****/
 body.view-in-course.view-courseware .window-wrap {
@@ -67,6 +81,7 @@ body.view-in-course.view-courseware .window-wrap {
 .content-wrapper {
 	.home {
 		padding: 0;
+		max-width: 1180px;
 
 		.page-header-main {
 			padding: 20px 20px 10px 20px;
