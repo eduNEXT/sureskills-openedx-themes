@@ -99,6 +99,14 @@ body.view-in-course.view-courseware .window-wrap {
 	min-width: 0;
 }
 
+.window-wrap{
+	.page-content .welcome-message img,
+	.page-content .welcome-message iframe,
+	.section-handouts img,
+	.section-handouts iframe {
+	max-width: 100%;
+	}
+} 
 
  /**** Course info ***/
 .content-wrapper {
