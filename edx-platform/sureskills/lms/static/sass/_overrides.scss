@@ -1,4 +1,7 @@
-
+html body{
+	font-family: 'Museo 500 Regular';
+}
+  
   /***** Navigation bar ******/
  
  .logo a {
@@ -61,16 +64,36 @@
 	 		}
 	 	}
  	}
-
-
  }
 
- /**** Login ***/
- .window-wrap .login-register-content{
- 	height: 715px;
+ body .wrapper-footer {
+ 	background: #415a6c;
+
+	 	#footer-openedx {
+	 		.nav-colophon{
+	 		display: none;
+	 		}
+
+	 	.footer-about-openedx a span {
+	 		color: #b4d333;
+	 		margin: 10px;
+	 		}
+
+	 	.copyright{
+	 		color: #FFF;
+	 	}
+
+	 	.nav-legal li a{
+	 		color: #FFF;
+
+	 		&:hover{
+	 			color: #00b4e4;
+	 		}
+	 	}
+ 	}
  }
 
-
+ 
  /**** Course content ****/
 body.view-in-course.view-courseware .window-wrap {
 	min-width: 0;
@@ -79,7 +102,7 @@ body.view-in-course.view-courseware .window-wrap {
 
  /**** Course info ***/
 .content-wrapper {
-	.home {
+	.container .home {
 		padding: 0;
 		max-width: 1180px;
 
@@ -87,6 +110,10 @@ body.view-in-course.view-courseware .window-wrap {
 			padding: 20px 20px 10px 20px;
 		}
 	}
+}
+
+.content-wrapper .heading-group button{
+	display: none;
 }
 
 /**** Wiki ****/
@@ -103,6 +130,16 @@ body.view-in-course.view-wiki .window-wrap {
 
 /***** Instructor ***/
 body.view-in-course.view-instructordash .window-wrap {
+	min-width: 0;
+}
+
+/*** Profile ***/
+.view-profile .content-wrapper .profile-self .wrapper-profile-field-account-privacy .u-field-account_privacy{
+	min-width: 0;
+}
+
+/** Course about **/
+.content-wrapper .course-info header.course-profile .intro-inner-wrapper{
 	min-width: 0;
 }
 
@@ -146,8 +183,70 @@ body.view-in-course.view-instructordash .window-wrap {
 			width: 100%;
 			}
 
-		} 
+		}
 
+		 .course-info .course-sidebar header .social-sharing{
+		 	height: 70px;
+		 }
+
+		 .course-info{
+
+		 	.container{
+		 		padding: 25px;
+		 	}
+
+		 	.details {
+		 		width: 100%;
+		 	}
+
+		 	 .course-sidebar{
+		 	width: 100%;
+		 	padding: 10px;
+		 	} 
+
+		 	header.course-profile{
+		 		padding-top: 70px;
+		 		height: 500px;
+
+		 		.intro-inner-wrapper{
+		 			margin: 25px;
+
+		 			.intro{
+			 		display: block;
+			 		width: 100%;
+			 		}
+
+			 		.media{
+			 		display: block;
+			 		width: 100%;
+			 		text-align: center;
+			 		text-align: -webkit-center;
+
+			 			.hero{
+			 				width: 70%;
+			 			}
+			 		}
+
+		 		} 
+		 	} 
+		 }
+
+		 .wrapper-account-settings .account-settings-container{
+		 	padding: 20px;
+		 }
+
+		 .account-settings-sections .section .account-settings-section-body .u-field{
+		 	width: 100%;
+
+		 	.field{
+		 		width: 100%;
+		 	}
+
+		 	.u-field-message{
+		 		width: 100%;
+		 		padding: 10px 0;
+		 	}
+		 }
 	}	
 }
 
@@ -229,4 +328,13 @@ body.view-in-course.view-instructordash .window-wrap {
 	}
 
 		
+}
+
+@media only screen and (max-width: 336px){
+	body .window-wrap .header-global.slim{
+		height: 200px
+	}
+	body .window-wrap .header-global{
+		height: 150px;
+	}
 }
